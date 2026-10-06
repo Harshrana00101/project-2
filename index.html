@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harsh Rana | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Harsh Rana, a web developer who builds fast, accessible websites. See projects and get in touch.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#home">Harsh Rana</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span class="sr-only">Menu</span>
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+
+    <nav id="menu" class="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <p class="hero-kicker">Web developer based in Delhi</p>
+      <h1 id="hero-title">I build websites that load fast and work for everyone.</h1>
+      <p class="hero-text">HTML, CSS and JavaScript, with a focus on clean code and accessible design.</p>
+      <p class="hero-actions">
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </p>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>Hi, I'm Harsh Rana. I'm a front-end developer who enjoys turning ideas into simple, usable websites. I started with small class projects and now build full sites for local businesses and friends.</p>
+          <p>When I'm not coding, I'm usually reading about design, cycling, or trying to fix something that isn't broken yet.</p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3 &amp; Flexbox/Grid</li>
+            <li>JavaScript (ES6)</li>
+            <li>Responsive design</li>
+            <li>Git &amp; GitHub</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <article class="project">
+            <div class="project-art art-1" aria-hidden="true"></div>
+            <h3>Weather Now</h3>
+            <p>A weather app that finds any city and shows a 5-day forecast using the Fetch API.</p>
+            <p class="tags">HTML &middot; CSS &middot; JavaScript</p>
+            <p class="links">
+              <a href="https://github.com/your-username/weather-app">Code<span class="sr-only"> for Weather Now</span></a>
+              <a href="https://example.com/weather">Live demo<span class="sr-only"> of Weather Now</span></a>
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="project">
+            <div class="project-art art-2" aria-hidden="true"></div>
+            <h3>Field Notes Blog</h3>
+            <p>A responsive blog built with Bootstrap, with live search and category filters.</p>
+            <p class="tags">Bootstrap &middot; JavaScript</p>
+            <p class="links">
+              <a href="https://github.com/your-username/blog">Code<span class="sr-only"> for Field Notes Blog</span></a>
+              <a href="https://example.com/blog">Live demo<span class="sr-only"> of Field Notes Blog</span></a>
+            </p>
+          </article>
+        </li>
+        <li>
+          <article class="project">
+            <div class="project-art art-3" aria-hidden="true"></div>
+            <h3>Tidewater Bike Repair</h3>
+            <p>A small business site tuned for SEO and accessibility, with structured data and a booking form.</p>
+            <p class="tags">Semantic HTML &middot; SEO</p>
+            <p class="links">
+              <a href="https://github.com/your-username/bike-repair">Code<span class="sr-only"> for Tidewater Bike Repair</span></a>
+              <a href="https://example.com/bikes">Live demo<span class="sr-only"> of Tidewater Bike Repair</span></a>
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p class="contact-intro">Have a project or a question? Send a message and I'll reply within two days.</p>
+
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" minlength="10" required></textarea>
+          <p class="error" id="message-error" role="alert"></p>
+        </div>
+
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Harsh Rana. Built with HTML, CSS and JavaScript.</p>
+    <ul class="social">
+      <li><a href="https://github.com/HarshRana">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/HarshRana">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
